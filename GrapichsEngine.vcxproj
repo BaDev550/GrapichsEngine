@@ -23,20 +23,20 @@
     <ClCompile Include="src\core\Application.cpp" />
     <ClCompile Include="src\core\Window.cpp" />
     <ClCompile Include="src\GrapichsEngine.cpp" />
-    <ClCompile Include="src\renderer\GridDrawer.cpp" />
+    <ClCompile Include="src\renderer\Grid.cpp" />
     <ClCompile Include="src\renderer\Renderer.cpp" />
     <ClCompile Include="src\renderer\Shader.cpp" />
     <ClCompile Include="src\renderer\stb.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="shaders\core_shader.frag" />
-    <Content Include="shaders\core_shader.vert" />
+    <Content Include="shaders\core_fragment_shader.glsl" />
+    <Content Include="shaders\core_vertex_shader.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\core\Application.h" />
     <ClInclude Include="include\core\Input.h" />
     <ClInclude Include="include\core\Window.h" />
-    <ClInclude Include="include\renderer\GridDrawer.h" />
+    <ClInclude Include="include\renderer\Grid.h" />
     <ClInclude Include="include\renderer\Renderer.h" />
     <ClInclude Include="include\renderer\Shader.h" />
   </ItemGroup>

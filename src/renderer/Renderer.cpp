@@ -1,7 +1,7 @@
 ﻿#include <renderer/Renderer.h>
 
 void Renderer::init(){
-    core_shader.setupShader("shaders/core_shader.vert", "shaders/core_shader.frag");
+    core_shader.setupShader("shaders/core_vertex_shader.glsl", "shaders/core_fragment_shader.glsl");
     grid_drawer.createBufferObjects();
 }
 
@@ -11,5 +11,5 @@ void Renderer::renderFrame(){
 }
 
 void Renderer::cleanup(){
-
+    
 }

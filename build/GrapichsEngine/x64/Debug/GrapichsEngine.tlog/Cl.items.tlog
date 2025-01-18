@@ -2,7 +2,7 @@ E:\GrapichsEngine\include\core\glad.c;E:\GrapichsEngine\build\GrapichsEngine\x64
 E:\GrapichsEngine\src\core\Application.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\Application.obj
 E:\GrapichsEngine\src\core\Window.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\Window.obj
 E:\GrapichsEngine\src\GrapichsEngine.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\GrapichsEngine.obj
-E:\GrapichsEngine\src\renderer\GridDrawer.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\GridDrawer.obj
+E:\GrapichsEngine\src\renderer\Grid.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\Grid.obj
 E:\GrapichsEngine\src\renderer\Renderer.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\Renderer.obj
 E:\GrapichsEngine\src\renderer\Shader.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\Shader.obj
 E:\GrapichsEngine\src\renderer\stb.cpp;E:\GrapichsEngine\build\GrapichsEngine\x64\Debug\stb.obj

@@ -10,9 +10,9 @@ void Application::Start(){
     Window::setResizable(true);
     Window::setVsync(true);
     if (!Window::init())
-        std::cout << "ERROR::Window::init() failed " << __FILE__ << " at " << __LINE__ << std::endl; return;
+        std::cout << "ERROR::Window::init() failed " << __FILE__ << " at " << __LINE__ << std::endl;
 
-    DGL_Renderer->init();
+    DGL_Renderer.init();
 }
 
 void Application::Update(){
@@ -24,10 +24,10 @@ void Application::Update(){
         lastFrame = currentFrame;
 
         ProcessInput();
-        DGL_Renderer->renderFrame();
+        DGL_Renderer.renderFrame();
         Window::swapBuffers();
     }
-    DGL_Renderer->cleanup();
+    DGL_Renderer.cleanup();
     Window::close();
 }
 

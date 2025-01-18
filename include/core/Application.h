@@ -10,12 +10,13 @@ private:
     float deltaTime;
     float lastFrame;
 
-    Renderer* DGL_Renderer;
+    Renderer DGL_Renderer;
 public:
-    Application(){ DGL_Renderer = new Renderer(); }
-    ~Application(){ delete DGL_Renderer; }
+    Application() {}
     
     void Start();
     void Update();
     void ProcessInput();
+
+    Renderer GetRenderer() { return DGL_Renderer; }
 };
