@@ -33,6 +33,7 @@ public:
     
     static bool init();
     static void swapBuffers();
+    static void clearBuffers(const float red, const float green, const float blue);
     static void close();
     
     static void setSize(unsigned int width, unsigned int height) { window.width = width, window.height = height; };

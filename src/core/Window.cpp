@@ -65,15 +65,23 @@ bool Window::init(){
 
 void Window::swapBuffers(){
     glfwGetFramebufferSize(window.Window, &window.fb_width, &window.fb_height);
-    glfwSwapBuffers(window.Window);
     glfwPollEvents();
+    glfwSwapBuffers(window.Window);
+}
+
+void Window::clearBuffers(const float red, const float green, const float blue){
+    glClear(GL_COLOR_BUFFER_BIT);
+    glClearColor(red, green, blue, 1.0f);
 }
 
 void Window::close(){
-    if (!glfwWindowShouldClose(window.Window))
+    if (glfwWindowShouldClose(window.Window)){
         glfwSetWindowShouldClose(window.Window, true);
-    glfwDestroyWindow(window.Window);
-    glfwDestroyWindow(window.Window);
+        glfwDestroyWindow(window.Window);
+        glfwTerminate();
+    }else{
+        glfwSetWindowShouldClose(window.Window, true);
+    }
 }
 
 void frameBufferSizeCallback(GLFWwindow* window, int width, int height){
