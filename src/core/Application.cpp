@@ -3,7 +3,7 @@
 
 void Application::Start(){
     Window::setSize(800, 800);
-    Window::setTitle("3D Grapichs Engine");
+    Window::setTitle("2D Grapichs Engine");
     Window::setMode(WINDOWED);
     Window::setResizable(true);
     Window::setVsync(true);

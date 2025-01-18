@@ -30,7 +30,7 @@ private:
     static WindowStructer window;
 public:
     Window(unsigned int width, unsigned int height, const char* title);
-
+    
     static bool init();
     static void swapBuffers();
     static void close();
@@ -52,7 +52,7 @@ public:
     __forceinline static bool getResizable() { return window.bCanResize; }
 
     __forceinline static bool windowShouldClose() { return glfwWindowShouldClose(window.Window); }
-    __forceinline static float getTime() { return glfwGetTime(); }
+    __forceinline static float getTime() { return (float)glfwGetTime(); }
     
     __forceinline static int getFrameBufferWidth() { return window.fb_width; }
     __forceinline static int getFrameBufferHeight() { return window.fb_height; }
